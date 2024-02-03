@@ -6,6 +6,7 @@
 *.env
 *.db
 *.pdf
+*.pkl
 
 # 폴더
 */cache/*
