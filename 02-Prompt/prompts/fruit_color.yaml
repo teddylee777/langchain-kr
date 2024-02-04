@@ -1,0 +1,3 @@
+_type: "prompt"
+template: "{fruit}의 색깔이 뭐야?"
+input_variables: ["fruit"]
