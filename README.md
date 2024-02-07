@@ -36,5 +36,4 @@
 본 튜토리얼에 기여하고자 하는 분들은 언제든지 풀 리퀘스트를 보내주시거나, 이슈를 등록하여 의견을 공유해 주시기 바랍니다. 모든 기여는 본 프로젝트의 발전에 큰 도움이 됩니다. 💖
 
 <br/>
-<br/>
 <p><a href="https://www.buymeacoffee.com/teddylee777"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="teddylee777" /></a></p>
