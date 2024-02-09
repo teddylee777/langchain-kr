@@ -4,6 +4,17 @@
 
 본 튜토리얼을 통해 LangChain을 더 쉽고 효과적으로 사용하는 방법을 배울 수 있습니다.
 
+## 🍿 유튜브
+
+- [노코딩으로 쇼핑몰 리뷰 분석 (크롤링 + Q&A 챗봇)](https://youtu.be/r5YyftofuII)
+- [ChatGPT 의 GPTS 에 API 호출기능을 붙이면 어떻게 될까?](https://youtu.be/JBL4vhwUAnc)
+- [LangChain Agent 를 활용하여 ChatGPT를 업무자동화 에 적용하는 방법🔥🔥](https://youtu.be/2q1XlbFVzf8)
+- [Private GPT! 나만의 ChatGPT 만들기 (HuggingFace Open LLM 활용)](https://youtu.be/aECwQqBWfJM)
+- [LangGraph 의 멀티 에이전트 콜라보레이션 찍먹하기](https://youtu.be/G8jrAA2bPnA)
+- [마법같은 문법 LangChain Expression Language(LCEL)](https://youtu.be/0X4Ks_nJUt8)
+- [이미지를 matplotlib 파이썬 코드로, 원하는 문장을 입력하면 파이썬 코드로 변환하는 방법](https://youtu.be/hY8Pquy3Hhg)
+- [RAG 파이프라인 이해해보기 - 네이버 뉴스기사 기반 Q&A 챗봇 제작](https://youtu.be/1scMJH93v0M)
+
 
 
 ## ✏️ 블로그 글 목록
