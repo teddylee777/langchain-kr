@@ -53,7 +53,18 @@
 
 - [Multi-Agent Collaboration(다중 협업 에이전트) 로 복잡한 테스크를 수행하는 LLM 어플리케이션 제작](https://teddylee777.github.io/langgraph/langgraph-multi-agent-collaboration/)
 
+## LangChain 밋업 2024 Q1 발표자료
 
+- [RAG - 우리가 절대 쉽게 원하는 결과물을 얻을 수 없는 이유 - 테디노트](https://aifactory.space/task/2719/discussion/830)
+- [프름프트 흐름과 LLM 모델 평가 - 이재석님](https://aifactory.space/task/2719/discussion/831)
+- [인공지능을 통한 게임 제작 파이프라인의 변화 - 김한얼님](https://aifactory.space/task/2719/discussion/834)
+- [OpenAI SORA 살짝 맛보기 - 박정현님](https://aifactory.space/task/2719/discussion/839)
+- [Semantic Kernel로 만드는 AI Copilot - 이종인님](https://aifactory.space/task/2719/discussion/835)
+- [Streamlit 과 langchain으로 나만의 웹서비스 개발하기 - 최재혁님](https://aifactory.space/task/2719/discussion/832)
+- [Llama2-koen을 만들기까지 - 최태균님](https://aifactory.space/task/2719/discussion/836)
+- [올바른 한국어 언어 모델 평가를 위해: HAE-RAE Bench, KMMLU - 손규진님](https://aifactory.space/task/2719/discussion/833)
+- [랭체인 네이버 기사 크롤링 - 우성우님(https://aifactory.space/task/2719/discussion/829)
+- [Gemma와 LangChain을 이용한 SQL 체인만들기 - 김태영님](https://aifactory.space/task/2719/discussion/841)
 
 
 ## 📜 라이선스
