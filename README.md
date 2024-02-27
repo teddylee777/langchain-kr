@@ -63,7 +63,7 @@
 - [Streamlit 과 langchain으로 나만의 웹서비스 개발하기 - 최재혁님](https://aifactory.space/task/2719/discussion/832)
 - [Llama2-koen을 만들기까지 - 최태균님](https://aifactory.space/task/2719/discussion/836)
 - [올바른 한국어 언어 모델 평가를 위해: HAE-RAE Bench, KMMLU - 손규진님](https://aifactory.space/task/2719/discussion/833)
-- [랭체인 네이버 기사 크롤링 - 우성우님(https://aifactory.space/task/2719/discussion/829)
+- [랭체인 네이버 기사 크롤링 - 우성우님](https://aifactory.space/task/2719/discussion/829)
 - [Gemma와 LangChain을 이용한 SQL 체인만들기 - 김태영님](https://aifactory.space/task/2719/discussion/841)
 
 
