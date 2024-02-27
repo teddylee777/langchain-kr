@@ -53,7 +53,7 @@
 
 - [Multi-Agent Collaboration(다중 협업 에이전트) 로 복잡한 테스크를 수행하는 LLM 어플리케이션 제작](https://teddylee777.github.io/langgraph/langgraph-multi-agent-collaboration/)
 
-## LangChain 밋업 2024 Q1 발표자료
+## 👥 LangChain 밋업 2024 Q1 발표자료
 
 - [RAG - 우리가 절대 쉽게 원하는 결과물을 얻을 수 없는 이유 - 테디노트](https://aifactory.space/task/2719/discussion/830)
 - [프름프트 흐름과 LLM 모델 평가 - 이재석님](https://aifactory.space/task/2719/discussion/831)
