@@ -52,6 +52,7 @@
 ### LangGraph
 
 - [Multi-Agent Collaboration(다중 협업 에이전트) 로 복잡한 테스크를 수행하는 LLM 어플리케이션 제작](https://teddylee777.github.io/langgraph/langgraph-multi-agent-collaboration/)
+- [LangGraph Retrieval Agent를 활용한 동적 문서 검색 및 처리](https://teddylee777.github.io/langgraph/langgraph-agentic-rag/)
 
 ## 👥 LangChain 밋업 2024 Q1 발표자료
 
