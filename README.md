@@ -5,6 +5,7 @@
 본 튜토리얼을 통해 LangChain을 더 쉽고 효과적으로 사용하는 방법을 배울 수 있습니다.
 
 ## 🍿 유튜브
+- [긴 문서(long context) 에 대한 참신한 RAG 방법론: RAPTOR! 논문 리뷰와 코드를 준비했습니다](https://youtu.be/gcdkISrpMCA)
 - [LangChain 밋업 발표 / R.A.G. 우리가 절대 쉽게결과물을 얻을 수 없는 이유](https://youtu.be/NfQrRQmDrcc)
 - [노코딩으로 쇼핑몰 리뷰 분석 (크롤링 + Q&A 챗봇)](https://youtu.be/r5YyftofuII)
 - [ChatGPT 의 GPTS 에 API 호출기능을 붙이면 어떻게 될까?](https://youtu.be/JBL4vhwUAnc)
