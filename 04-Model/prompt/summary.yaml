@@ -1,7 +1,0 @@
-_type: "prompt"
-template: |
-  Summarizes text in simple bullet points ordered from most important to least important.
-  ----
-  {text}
-  
-input_variables: ["text"]
