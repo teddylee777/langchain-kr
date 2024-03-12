@@ -7,10 +7,15 @@
 *.db
 *.pdf
 *.pkl
+*.md
 
 # 폴더
 */cache/*
 */keys/*
+*/working/*
+*/convert/*
+*/convert2/*
+working/
 
 
 
