@@ -6,7 +6,7 @@
 
 
 
-## 📔 위키독스 전자책
+## 📔 위키독스 전자책(무료)
 
 <img src="./images/langchain-note.png" alt="한 권으로 끝내는 랭체인 노트" style="width:200px;height:280px;">
 
