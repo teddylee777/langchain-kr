@@ -8,6 +8,7 @@
 *.pdf
 *.pkl
 *.md
+*.gguf
 
 # 폴더
 */cache/*
