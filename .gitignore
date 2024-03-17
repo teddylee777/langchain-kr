@@ -9,6 +9,12 @@
 *.pkl
 *.md
 *.gguf
+*.faiss
+*.index
+*.sqlite3
+*.bin
+
+
 
 # 폴더
 */cache/*
