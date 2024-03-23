@@ -21,6 +21,7 @@
 
 
 ## 🍿 유튜브
+- [(LangServe 리뷰) 초간편 LLM 웹앱 제작 & 배포기능까지! 과연, Streamlit 대체할 수 있을까?](https://youtu.be/mdzMBF56HOM)
 - [AI vs AI 의대 증원에 대한 모의 찬반토론 (AI 더빙본)](https://youtu.be/Z2j93efq1S0)
 - [토론 AI 에이전트 - 의대 입학정원 증원에 대한 찬반토론을 AI 끼리 한다면?](https://youtu.be/NaU89YXQAoI)
 - [긴 문서(long context) 에 대한 참신한 RAG 방법론: RAPTOR! 논문 리뷰와 코드를 준비했습니다](https://youtu.be/gcdkISrpMCA)
