@@ -21,6 +21,9 @@
 
 
 ## 🍿 유튜브
+- [Streamlit 으로 ChatGPT 클론 서비스 제작하는 방법](https://youtu.be/ZVmLe3odQvc)
+- [대화내용을 기록하는 LLM Chain 생성 방법 + 도큐먼트 참조하는 tip!](https://youtu.be/VtS8yF2ItgI)
+- [(Self Learning GPT) LangSmith 피드백으로 원하는 형식의 답변을 학습하는 GPT](https://youtu.be/8JEbrboSumg)
 - [(LangServe 리뷰) 초간편 LLM 웹앱 제작 & 배포기능까지! 과연, Streamlit 대체할 수 있을까?](https://youtu.be/mdzMBF56HOM)
 - [AI vs AI 의대 증원에 대한 모의 찬반토론 (AI 더빙본)](https://youtu.be/Z2j93efq1S0)
 - [토론 AI 에이전트 - 의대 입학정원 증원에 대한 찬반토론을 AI 끼리 한다면?](https://youtu.be/NaU89YXQAoI)
