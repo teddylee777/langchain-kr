@@ -1,5 +1,7 @@
 # 📘 LangChain 한국어 튜토리얼
 
+![](images/welcome.png)
+
 🌟 **LangChain 공식 Document, Cookbook, 그 밖의 실용 예제**를 바탕으로 작성한 한국어 튜토리얼입니다. 
 
 본 튜토리얼을 통해 LangChain을 더 쉽고 효과적으로 사용하는 방법을 배울 수 있습니다.
@@ -21,6 +23,7 @@
 
 
 ## 🍿 유튜브
+
 - [Streamlit 으로 ChatGPT 클론 서비스 제작하는 방법](https://youtu.be/ZVmLe3odQvc)
 - [대화내용을 기록하는 LLM Chain 생성 방법 + 도큐먼트 참조하는 tip!](https://youtu.be/VtS8yF2ItgI)
 - [(Self Learning GPT) LangSmith 피드백으로 원하는 형식의 답변을 학습하는 GPT](https://youtu.be/8JEbrboSumg)
