@@ -30,6 +30,7 @@ langgraph = "^0.0.32"
 tiktoken = "^0.6.0"
 langchainhub = "^0.1.15"
 arxiv = "^2.1.0"
+huggingface-hub = "^0.22.2"
 
 
 [build-system]
