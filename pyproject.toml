@@ -31,6 +31,8 @@ tiktoken = "^0.6.0"
 langchainhub = "^0.1.15"
 arxiv = "^2.1.0"
 huggingface-hub = "^0.22.2"
+rank-bm25 = "^0.2.2"
+deepl = "^1.17.0"
 
 
 [build-system]
