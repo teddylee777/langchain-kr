@@ -23,6 +23,10 @@
 
 
 ## 🍿 유튜브
+- [🤗 huggingface 에 공개된 오픈모델을 💻 로컬PC 에서 빠르게 실행🔥 해보고 테스트 하는 방법 + 모델 서빙🚀 + 업무자동화🤖 에 적용하는 방법까지!](https://youtu.be/bANQk--Maxs)
+- [👀 코드 기반 답변하는 💻 GitHub 소스코드 기반 Q&A 챗봇🤖 제작기](https://youtu.be/yB8b-lW_5HY)
+- [llama3 출시🔥 로컬에서 Llama3-8B 모델 돌려보기👀](https://youtu.be/12CuUQIPdM4)
+- [🔥성능이 놀라워요🔥 무료로 한국어🇰🇷 파인튜닝 모델 받아서 나만의 로컬 LLM 호스팅 하기(#LangServe) + #RAG 까지!!](https://youtu.be/VkcaigvTrug)
 - [무료로 한국어🇰🇷 파인튜닝 모델 받아서 나만의 로컬 LLM 호스팅 하기(LangServe) + RAG 까지!!](https://youtu.be/VkcaigvTrug)
 - [Streamlit 으로 ChatGPT 클론 서비스 제작하는 방법](https://youtu.be/ZVmLe3odQvc)
 - [대화내용을 기록하는 LLM Chain 생성 방법 + 도큐먼트 참조하는 tip!](https://youtu.be/VtS8yF2ItgI)
