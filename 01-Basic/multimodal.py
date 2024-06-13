@@ -1,5 +1,4 @@
 import base64
-import dis
 import requests
 from IPython.display import Image, display
 import os
