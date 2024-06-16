@@ -51,6 +51,7 @@ pymupdf4llm = "^0.0.5"
 torch = "^2.2.2"
 torchvision = "^0.17.2"
 pandas = "^2.2.2"
+langsmith = "^0.1.77"
 
 
 [build-system]
