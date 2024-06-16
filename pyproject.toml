@@ -40,6 +40,11 @@ langchain-chroma = "^0.1.1"
 langchain-cohere = "^0.1.5"
 kiwipiepy = "^0.17.1"
 konlpy = "^0.6.0"
+unstructured = {version = "0.10.19", extras = ["all-docs"]}
+pydantic = "^2.7.4"
+lxml = "^5.2.2"
+pillow = "^10.3.0"
+open-clip-torch = "^2.24.0"
 
 
 [build-system]
