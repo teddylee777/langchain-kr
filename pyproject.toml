@@ -45,6 +45,9 @@ pydantic = "^2.7.4"
 lxml = "^5.2.2"
 pillow = "^10.3.0"
 open-clip-torch = "^2.24.0"
+pdfplumber = "^0.11.1"
+pdfminer-six = "^20231228"
+pymupdf4llm = "^0.0.5"
 
 
 [build-system]

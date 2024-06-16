@@ -5628,6 +5628,20 @@ files = [
 PyMuPDFb = "1.24.3"
 
 [[package]]
+name = "pymupdf4llm"
+version = "0.0.5"
+description = "PyMuPDF Utilities for LLM/RAG"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pymupdf4llm-0.0.5-py3-none-any.whl", hash = "sha256:9882e42789dcefbad25c8e570d9c8d72eaf34e6a1f16ef3f555faf5f7718654f"},
+    {file = "pymupdf4llm-0.0.5.tar.gz", hash = "sha256:3256dbc5feec8ec3149586e2e2688f3f47fa733395c33e21a7af15f9b7531689"},
+]
+
+[package.dependencies]
+pymupdf = ">=1.24.2"
+
+[[package]]
 name = "pymupdfb"
 version = "1.24.3"
 description = "MuPDF shared libraries for PyMuPDF."
@@ -8658,4 +8672,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "4e6f4bb3c5f88852b57d2f9589be02007206a372931e4c78136de223fbe7f671"
+content-hash = "912d008980d3a04c3c398f78ca13e9a756a026c7fa88ce267b3f80df04ce2a8f"
