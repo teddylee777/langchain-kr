@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "langchain-kr"
 version = "0.1.0"
-description = "langchain tutorial translated in Korean"
+description = "Ultimate LangChain Tutorial written in Korean by TeddyNote."
 authors = ["teddy <teddylee777@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.13"
+python = ">=3.11,<3.12"
 langchain = "^0.1.13"
 langchain-openai = "^0.1.1"
 openai = "^1.14.3"
