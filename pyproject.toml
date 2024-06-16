@@ -50,6 +50,7 @@ pdfminer-six = "^20231228"
 pymupdf4llm = "^0.0.5"
 torch = "^2.2.2"
 torchvision = "^0.17.2"
+pandas = "^2.2.2"
 
 
 [build-system]
