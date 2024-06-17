@@ -3177,12 +3177,12 @@ tiktoken = ">=0.7,<1"
 
 [[package]]
 name = "langchain-teddynote"
-version = "0.0.5"
+version = "0.0.6"
 description = "LangChain Helper Library"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "langchain_teddynote-0.0.5-py3-none-any.whl", hash = "sha256:4b6c8f1d39988f450ffcff05a9779d366951b47a4142fb8fdca80000b1d01f1b"},
+    {file = "langchain_teddynote-0.0.6-py3-none-any.whl", hash = "sha256:e953cb9505c8e205cbac79df35f38f102181df88f455fc44d986228856a86aa6"},
 ]
 
 [package.dependencies]
