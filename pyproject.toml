@@ -8,51 +8,66 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
+# python 버전 지정: 3.11
 python = ">=3.11,<3.12"
+
+# 언어 및 자연어 처리 관련 패키지
 langchain = "^0.2"
-langchain-openai = "^0"
-openai = "^1"
-streamlit = "^1.32.2"
-langchain-anthropic = "^0"
-redis = "^5.0.3"
-jupyter = "^1.0.0"
-notebook = "^7.1.2"
-matplotlib = "^3.8.4"
-lark = "^1.1.9"
-langchain-text-splitters = "^0"
-langchain-community = "^0"
-pymupdf = "^1.24.1"
-chromadb = "^0.4.24"
-faiss-cpu = "^1.8.0"
-python-dotenv = "^1.0.1"
-pypdf = "^4.2.0"
-langgraph = "^0"
-tiktoken = "^0"
+langchain-openai = "^0.1"
+openai = "^1.34"
+langchain-anthropic = "^0.1"
+langchain-text-splitters = "^0.2"
+langchain-community = "^0.2"
+langchain-elasticsearch = "^0.2"
+langchain-upstage = "^0.1"
+langchain-chroma = "^0.1"
+langchain-cohere = "^0.1"
 langchainhub = "^0.1.15"
-arxiv = "^2.1.0"
+langgraph = "^0.0"
+langsmith = "^0.1"
+langchain-teddynote = "^0.0"
 huggingface-hub = "^0.22.2"
-rank-bm25 = "^0.2.2"
 deepl = "^1.17.0"
-langchain-elasticsearch = "^0"
-ragas = "^0.1.7"
-langchain-upstage = "^0"
-langchain-chroma = "^0"
-langchain-cohere = "^0"
 kiwipiepy = "^0.17.1"
 konlpy = "^0.6.0"
-unstructured = {version = "0.10.19", extras = ["all-docs"]}
+
+# 데이터 처리 및 분석 관련 패키지
+pandas = "^2.2.2"
+rank-bm25 = "^0.2.2"
+
+# 데이터베이스 및 캐시 관련 패키지
+redis = "^5.0.3"
+chromadb = "^0.4.24"
+
+# PDF 및 파일 처리 관련 패키지
+pymupdf = "^1.24.1"
+pypdf = "^4.2.0"
+pdfplumber = "^0.11.1"
+pdfminer-six = "^20231228"
+pymupdf4llm = "^0.0"
+
+# 시각화 및 사용자 인터페이스 관련 패키지
+matplotlib = "^3.8.4"
+streamlit = "^1.32.2"
+jupyter = "^1.0.0"
+notebook = "^7.1.2"
+
+# 딥러닝 및 머신러닝 관련 패키지
+torch = "^2.2.2"
+torchvision = "^0.17.2"
+faiss-cpu = "^1.8.0"
+open-clip-torch = "^2.24.0"
+
+# 기타 유틸리티 및 필수 패키지
+python-dotenv = "^1.0.1"
 pydantic = "^2.7.4"
 lxml = "^5.2.2"
 pillow = "^10.3.0"
-open-clip-torch = "^2.24.0"
-pdfplumber = "^0.11.1"
-pdfminer-six = "^20231228"
-pymupdf4llm = "^0"
-torch = "^2.2.2"
-torchvision = "^0.17.2" 
-pandas = "^2.2.2"
-langsmith = "^0"
-langchain-teddynote = "^0"
+lark = "^1.1.9"
+ragas = "^0.1.7"
+unstructured = {version = "0.10.19", extras = ["all-docs"]}
+arxiv = "^2.1.0"
+tiktoken = "^0.7"
 
 
 [build-system]
