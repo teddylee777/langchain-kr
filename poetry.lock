@@ -1309,13 +1309,13 @@ vectorstore-mmr = ["numpy (>=1)", "simsimd (>=3)"]
 
 [[package]]
 name = "email-validator"
-version = "2.1.1"
+version = "2.1.2"
 description = "A robust email address syntax and deliverability validation library."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "email_validator-2.1.1-py3-none-any.whl", hash = "sha256:97d882d174e2a65732fb43bfce81a3a834cbc1bde8bf419e30ef5ea976370a05"},
-    {file = "email_validator-2.1.1.tar.gz", hash = "sha256:200a70680ba08904be6d1eef729205cc0d687634399a5924d842533efb824b84"},
+    {file = "email_validator-2.1.2-py3-none-any.whl", hash = "sha256:d89f6324e13b1e39889eab7f9ca2f91dc9aebb6fa50a6d8bd4329ab50f251115"},
+    {file = "email_validator-2.1.2.tar.gz", hash = "sha256:14c0f3d343c4beda37400421b39fa411bbe33a75df20825df73ad53e06a9f04c"},
 ]
 
 [package.dependencies]
@@ -3196,6 +3196,19 @@ files = [
 langchain-core = ">=0.1.46,<0.2.0"
 openai = ">=1.24.0,<2.0.0"
 tiktoken = ">=0.5.2,<1"
+
+[[package]]
+name = "langchain-teddynote"
+version = "0.0.2"
+description = "LangChain Helper Library"
+optional = false
+python-versions = ">=3.10"
+files = [
+    {file = "langchain_teddynote-0.0.2-py3-none-any.whl", hash = "sha256:bd08361ef5babaa1e28ecee9eec45326f3b2cbb2d113584a6a1f91ab441c5f25"},
+]
+
+[package.dependencies]
+langchain = "*"
 
 [[package]]
 name = "langchain-text-splitters"
@@ -8582,4 +8595,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "601856304f6fb7175a6cfff15d350c286e9c879609f9641d8a43f020898583d0"
+content-hash = "858c84ecdce89e193a63e4e3f0d203b8d88180b56b7d0a9a279169ed52e6ab6d"

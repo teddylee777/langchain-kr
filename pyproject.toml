@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "langchain-kr"
-version = "0.1.0"
+version = "0.1.1"
 description = "Ultimate LangChain Tutorial written in Korean by TeddyNote."
 authors = ["teddy <teddylee777@gmail.com>"]
 license = "MIT"
@@ -49,9 +49,10 @@ pdfplumber = "^0.11.1"
 pdfminer-six = "^20231228"
 pymupdf4llm = "^0.0.5"
 torch = "^2.2.2"
-torchvision = "^0.17.2"
+torchvision = "^0.17.2" 
 pandas = "^2.2.2"
 langsmith = "^0.1.77"
+langchain-teddynote = "^0.0.2"
 
 
 [build-system]
