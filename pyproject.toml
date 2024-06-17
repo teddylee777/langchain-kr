@@ -68,6 +68,7 @@ ragas = "^0.1.7"
 unstructured = {version = "0.10.19", extras = ["all-docs"]}
 arxiv = "^2.1.0"
 tiktoken = "^0.7"
+tenacity = "8.3.0"
 
 
 [build-system]

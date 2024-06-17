@@ -3177,12 +3177,12 @@ tiktoken = ">=0.7,<1"
 
 [[package]]
 name = "langchain-teddynote"
-version = "0.0.3"
+version = "0.0.5"
 description = "LangChain Helper Library"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "langchain_teddynote-0.0.3-py3-none-any.whl", hash = "sha256:b4eebff95f7855e6e8ec250810bce3da74db817b86fcf926d9ebb402f361467b"},
+    {file = "langchain_teddynote-0.0.5-py3-none-any.whl", hash = "sha256:4b6c8f1d39988f450ffcff05a9779d366951b47a4142fb8fdca80000b1d01f1b"},
 ]
 
 [package.dependencies]
@@ -8696,4 +8696,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "290567c7aa3a79df046a9adee42301c447e91ad3fdf6a9d6213c74a8bfd834bb"
+content-hash = "de55fc5192406073c1787a9390dbf210a9ddd120616a6cf3601ad5eb62791889"
