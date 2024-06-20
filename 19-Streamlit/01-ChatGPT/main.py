@@ -16,9 +16,6 @@ load_dotenv()
 # 제목
 st.title("💬 CustomGPT")
 
-# 메모리 설정
-# msgs =
-
 # 채팅 초기화 버튼 삽입
 with st.sidebar:
     reset_history = st.button("채팅 초기화")
