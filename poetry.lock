@@ -3161,6 +3161,21 @@ elasticsearch = {version = ">=8.13.1,<9.0.0", extras = ["vectorstore-mmr"]}
 langchain-core = ">=0.1.50,<0.3"
 
 [[package]]
+name = "langchain-experimental"
+version = "0.0.61"
+description = "Building applications with LLMs through composability"
+optional = false
+python-versions = "<4.0,>=3.8.1"
+files = [
+    {file = "langchain_experimental-0.0.61-py3-none-any.whl", hash = "sha256:f9c516f528f55919743bd56fe1689a53bf74ae7f8902d64b9d8aebc61249cbe2"},
+    {file = "langchain_experimental-0.0.61.tar.gz", hash = "sha256:e9538efb994be5db3045cc582cddb9787c8299c86ffeee9d3779b7f58eef2226"},
+]
+
+[package.dependencies]
+langchain-community = ">=0.2.5,<0.3.0"
+langchain-core = ">=0.2.7,<0.3.0"
+
+[[package]]
 name = "langchain-openai"
 version = "0.1.8"
 description = "An integration package connecting OpenAI and LangChain"
@@ -8711,4 +8726,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "f60b9b13d66892ece4ba2f89cf39433f939024caf8cfd5fe3c809314bf8d1b23"
+content-hash = "2f9d9b3787a2590697ef16fe1cb3fedd137178035d1acaeb8d37783620344574"
