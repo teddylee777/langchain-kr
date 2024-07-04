@@ -22,7 +22,7 @@
 - [랭체인LangChain 노트 by 테디노트](https://wikidocs.net/book/14314) 구경하러 가기
 
 
-<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=#teddylee777/langchain-kr" frameBorder="0"></iframe>
+<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=Z2l0aHViX3BhdF8xMUFDTTNTQ1kwOWNKa2xsSmpZRmVMX2xpVHF3MFlzT2Rvc1pUTzhmaWV3bE40TXc5UnY2ajJqRnNibjI0TGxLSnc3UlM1R0EzSzhzamlvWUxE#teddylee777/langchain-kr&Date" frameBorder="0"></iframe>
 
 ## 🍿 유튜브
 - [🤗 huggingface 에 공개된 오픈모델을 💻 로컬PC 에서 빠르게 실행🔥 해보고 테스트 하는 방법 + 모델 서빙🚀 + 업무자동화🤖 에 적용하는 방법까지!](https://youtu.be/bANQk--Maxs)
