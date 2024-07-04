@@ -72,6 +72,7 @@ tenacity = "8.3.0"
 langchain-experimental = "^0.0.61"
 pymilvus = "^2.4.4"
 langchain-milvus = "^0.1.1"
+langchain-google-genai = "^1.0.7"
 
 
 [build-system]
