@@ -22,8 +22,6 @@
 - [랭체인LangChain 노트 by 테디노트](https://wikidocs.net/book/14314) 구경하러 가기
 
 
-[![Star History Chart](https://api.star-history.com/svg?repos=teddylee777/langchain-kr&type=Date)](https://star-history.com/#teddylee777/langchain-kr&Date)
-
 ## 🍿 유튜브
 - [🤗 huggingface 에 공개된 오픈모델을 💻 로컬PC 에서 빠르게 실행🔥 해보고 테스트 하는 방법 + 모델 서빙🚀 + 업무자동화🤖 에 적용하는 방법까지!](https://youtu.be/bANQk--Maxs)
 - [👀 코드 기반 답변하는 💻 GitHub 소스코드 기반 Q&A 챗봇🤖 제작기](https://youtu.be/yB8b-lW_5HY)
@@ -126,6 +124,10 @@
 ## 🚀 시작하기
 
 본 튜토리얼을 시작하기 전에, LangChain과 관련된 기본적인 지식을 갖추는 것이 좋습니다. 위의 출처 링크를 통해 기본적인 정보를 얻을 수 있습니다.
+
+## Star History
+
+![Star History Chart](https://star-history.com/#teddylee777/langchain-kr&Date)
 
 ## 💡 컨트리뷰션
 
