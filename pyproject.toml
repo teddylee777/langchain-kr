@@ -26,7 +26,7 @@ langchainhub = "^0.1.15"
 langgraph = "^0.0"
 langsmith = "^0.1"
 langchain-teddynote = "^0.0"
-huggingface-hub = "^0.22.2"
+huggingface-hub = "^0.23"
 deepl = "^1.17.0"
 kiwipiepy = "^0.17.1"
 konlpy = "^0.6.0"
@@ -73,6 +73,7 @@ langchain-experimental = "^0.0.61"
 pymilvus = "^2.4.4"
 langchain-milvus = "^0.1.1"
 langchain-google-genai = "^1.0.7"
+langchain-huggingface = "^0.0.3"
 
 
 [build-system]
