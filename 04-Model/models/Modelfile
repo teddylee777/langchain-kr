@@ -1,0 +1,14 @@
+FROM EEVE-Korean-Instruct-10.8B-v1.0-Q8_0.gguf
+
+TEMPLATE """{{- if .System }}
+<s>{{ .System }}</s>
+{{- end }}
+<s>Human:
+{{ .Prompt }}</s>
+<s>Assistant:
+"""
+
+SYSTEM """A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions."""
+
+PARAMETER stop <s>
+PARAMETER stop </s>
