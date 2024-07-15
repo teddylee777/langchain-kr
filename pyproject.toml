@@ -8,8 +8,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-# python 버전 지정: 3.11
-python = ">=3.11,<3.12"
+python = ">=3.11,<4.0"
 
 # 언어 및 자연어 처리 관련 패키지
 langchain = "^0.2.5"
