@@ -8,8 +8,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-# python = ">=3.11,<3.12"
-python = ">=3.11,<4.0"
+python = ">=3.11,<3.12"
 
 # 언어 및 자연어 처리 관련 패키지
 langchain = "^0.2.5"
@@ -77,6 +76,8 @@ langchain-huggingface = "^0.0.3"
 google-search-results = "^2.4.2"
 gpt4all = "^2.7.0"
 protobuf = "3.20.3"
+sqlalchemy = "^2.0.31"
+jq = "^1.7.0"
 
 
 [build-system]
