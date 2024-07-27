@@ -4,7 +4,7 @@
 
 🌟 **LangChain 공식 Document, Cookbook, 그 밖의 실용 예제**를 바탕으로 작성한 한국어 튜토리얼입니다. 
 
-본 튜토리얼을 통해 LangChain을 더 쉽고 효과적으로 사용하는 방법을 배울 수 있습니다.
+본 튜토리얼을 통해 LangChain을 더 쉽고 효과적으로 사용하는 방법을 배울 수 있습니다. jypiter
 
 
 
