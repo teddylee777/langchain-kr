@@ -105,6 +105,22 @@
 
 🔒 본 내용의 저작권은 2024년 [테디노트](https://teddylee777.github.io)에 있습니다. 모든 권리는 저작권자에게 있으며, teddylee777@gmail.com 으로 문의할 수 있습니다.
 
+```
+Copyright 2024 테디노트(teddylee777@gmail.com)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
 **인용 및 출처 표기**
 
 - 본 저작물의 내용을 블로그, 유튜브 등 온라인 매체에 인용하여 게재하는 경우, 저작권법에 따라 반드시 **출처를 명시** 해야 합니다.
