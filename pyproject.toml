@@ -85,7 +85,7 @@ nest-asyncio = "^1.6.0"
 rapidocr-onnxruntime = "^1.3.24"
 seaborn = "^0.13.2"
 grandalf = "^0.8"
-
+rouge-score = "^0.1.2"
 
 [build-system]
 requires = ["poetry-core"]
