@@ -188,9 +188,13 @@ def create_agent(dataframe, selected_model="gpt-4o"):
         "If you are willing to generate visualization code, please use `plt.show()` at the end of your code. "
         "I prefer seaborn code for visualization, but you can use matplotlib as well."
         "\n\n<Visualization Preference>\n"
+        "- [IMPORTANT] Use `English` for your visualization title and labels."
         "- `muted` cmap, white background, and no grid for your visualization."
         "\nRecommend to set cmap, palette parameter for seaborn plot if it is applicable. "
-        "The language of final answer should be written in Korean. ",
+        "The language of final answer should be written in Korean. "
+        "\n\n###\n\n<Column Guidelines>\n"
+        "If user asks with columns that are not listed in `df.columns`, you may refer to the most similar columns listed below.\n"
+        "1. `싱가포르 mogas` is equivalent to `S' Product VS D-92 RON`.",
     )
 
 
