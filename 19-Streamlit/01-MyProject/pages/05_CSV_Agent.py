@@ -193,8 +193,7 @@ def create_agent(dataframe, selected_model="gpt-4o"):
         "\nRecommend to set cmap, palette parameter for seaborn plot if it is applicable. "
         "The language of final answer should be written in Korean. "
         "\n\n###\n\n<Column Guidelines>\n"
-        "If user asks with columns that are not listed in `df.columns`, you may refer to the most similar columns listed below.\n"
-        "1. `싱가포르 mogas` is equivalent to `S' Product VS D-92 RON`.",
+        "If user asks with columns that are not listed in `df.columns`, you may refer to the most similar columns listed below.\n",
     )
 
 
