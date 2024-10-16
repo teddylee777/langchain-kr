@@ -25,7 +25,7 @@ langchain-cohere = "^0.3"
 langchain-milvus = "^0.1.1"
 langchain-google-genai = "^2.0"
 langchain-huggingface = "^0"
-langchain-teddynote = "^0.3.6"
+langchain-teddynote = "^0.3.9"
 langchainhub = "^0.1.15"
 langgraph = "^0"
 langsmith = "^0.1"
@@ -89,6 +89,7 @@ grandalf = "^0.8"
 rouge-score = "^0.1.2"
 langchain-ollama = "^0.2.0"
 mypy = "^1.11.2"
+pinecone = "^5.3.1"
 
 [build-system]
 requires = ["poetry-core"]
