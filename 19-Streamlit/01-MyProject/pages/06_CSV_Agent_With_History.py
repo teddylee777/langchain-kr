@@ -1,13 +1,36 @@
 from typing import List, Union
-from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 from langchain_experimental.tools import PythonAstREPLTool
-from langchain_openai import ChatOpenAI
 from langchain_teddynote import logging
 from langchain_teddynote.messages import AgentStreamParser, AgentCallbacks
 from dotenv import load_dotenv
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+##### 폰트 설정 #####
+import platform
+
+# OS 판단
+current_os = platform.system()
+
+if current_os == "Windows":
+    # Windows 환경 폰트 설정
+    font_path = "C:/Windows/Fonts/malgun.ttf"  # 맑은 고딕 폰트 경로
+    fontprop = fm.FontProperties(fname=font_path, size=12)
+    plt.rc("font", family=fontprop.get_name())
+elif current_os == "Darwin":  # macOS
+    # Mac 환경 폰트 설정
+    plt.rcParams["font.family"] = "AppleGothic"
+else:  # Linux 등 기타 OS
+    # 기본 한글 폰트 설정 시도
+    try:
+        plt.rcParams["font.family"] = "NanumGothic"
+    except:
+        print("한글 폰트를 찾을 수 없습니다. 시스템 기본 폰트를 사용합니다.")
+
+##### 마이너스 폰트 깨짐 방지 #####
+plt.rcParams["axes.unicode_minus"] = False  # 마이너스 폰트 깨짐 방지
 
 # API 키 및 프로젝트 설정
 load_dotenv()
@@ -86,12 +109,17 @@ def add_message(role: MessageRole, content: List[Union[MessageType, str]]):
 with st.sidebar:
     clear_btn = st.button("대화 초기화")  # 대화 내용을 초기화하는 버튼
     uploaded_file = st.file_uploader(
-        "CSV 파일을 업로드 해주세요.", type=["csv"], accept_multiple_files=True
+        "CSV 파일을 업로드 해주세요.", type=["csv"]
     )  # CSV 파일 업로드 기능
     selected_model = st.selectbox(
         "OpenAI 모델을 선택해주세요.", ["gpt-4o", "gpt-4o-mini"], index=0
     )  # OpenAI 모델 선택 옵션
+
+    user_column_guideline = st.text_area("컬럼 가이드라인")
+
     apply_btn = st.button("데이터 분석 시작")  # 데이터 분석을 시작하는 버튼
+
+    txt_column_guideline = st.empty()
 
 
 # 콜백 함수
@@ -103,9 +131,9 @@ def tool_callback(tool) -> None:
         tool (dict): 실행된 도구 정보
     """
     if tool_name := tool.get("tool"):
-        if tool_name == "python_repl_ast":
+        if tool_name == "python_repl_tool":
             tool_input = tool.get("tool_input", {})
-            query = tool_input.get("query")
+            query = tool_input.get("code")
             if query:
                 df_in_result = None
                 with st.status("데이터 분석 중...", expanded=True) as status:
@@ -165,7 +193,13 @@ def result_callback(result: str) -> None:
 
 
 # 에이전트 생성 함수
-def create_agent(dataframe, selected_model="gpt-4o"):
+def create_agent(
+    dataframe,
+    selected_model="gpt-4o",
+    prefix_prompt=None,
+    postfix_prompt=None,
+    user_column_guideline=None,
+):
     """
     데이터프레임 에이전트를 생성하는 함수입니다.
 
@@ -176,24 +210,14 @@ def create_agent(dataframe, selected_model="gpt-4o"):
     Returns:
         Agent: 생성된 데이터프레임 에이전트
     """
-    return create_pandas_dataframe_agent(
-        ChatOpenAI(model=selected_model, temperature=0),
+    from dataanalysis import DataAnalysisAgent
+
+    return DataAnalysisAgent(
         dataframe,
-        verbose=False,
-        agent_type="tool-calling",
-        allow_dangerous_code=True,
-        prefix="You are a professional data analyst and expert in Pandas. "
-        "You must use Pandas DataFrame(`df`) to answer user's request. "
-        "\n\n[IMPORTANT] DO NOT create or overwrite the `df` variable in your code. \n\n"
-        "If you are willing to generate visualization code, please use `plt.show()` at the end of your code. "
-        "I prefer seaborn code for visualization, but you can use matplotlib as well."
-        "\n\n<Visualization Preference>\n"
-        "- [IMPORTANT] Use `English` for your visualization title and labels."
-        "- `muted` cmap, white background, and no grid for your visualization."
-        "\nRecommend to set cmap, palette parameter for seaborn plot if it is applicable. "
-        "The language of final answer should be written in Korean. "
-        "\n\n###\n\n<Column Guidelines>\n"
-        "If user asks with columns that are not listed in `df.columns`, you may refer to the most similar columns listed below.\n",
+        model_name=selected_model,
+        prefix_prompt=prefix_prompt,
+        postfix_prompt=postfix_prompt,
+        column_guideline=user_column_guideline,
     )
 
 
@@ -210,7 +234,7 @@ def ask(query):
         add_message(MessageRole.USER, [MessageType.TEXT, query])
 
         agent = st.session_state["agent"]
-        response = agent.stream({"input": query})
+        response = agent.stream(query, "abc123")
 
         ai_answer = ""
         parser_callback = AgentCallbacks(
@@ -230,7 +254,7 @@ def ask(query):
 
 # 메인 로직
 if clear_btn:
-    st.session_state["messa ges"] = []  # 대화 내용 초기화
+    st.session_state["messages"] = []  # 대화 내용 초기화
 
 if apply_btn and uploaded_file:
     loaded_data = pd.read_csv(uploaded_file)  # CSV 파일 로드
@@ -240,11 +264,22 @@ if apply_btn and uploaded_file:
         "df"
     ] = loaded_data  # 데이터프레임을 Python 실행 환경에 추가
     st.session_state["agent"] = create_agent(
-        loaded_data, selected_model
+        loaded_data,
+        selected_model,
+        prefix_prompt=None,
+        postfix_prompt=None,
+        user_column_guideline=user_column_guideline,
     )  # 에이전트 생성
+
     st.success("설정이 완료되었습니다. 대화를 시작해 주세요!")
 elif apply_btn:
     st.warning("파일을 업로드 해주세요.")
+
+
+if "agent" in st.session_state:
+    updated_column_guideline = txt_column_guideline.markdown(
+        f"**컬럼 가이드라인**\n\n```\n{st.session_state['agent'].column_guideline}\n```"
+    )
 
 print_messages()  # 저장된 메시지 출력
 
