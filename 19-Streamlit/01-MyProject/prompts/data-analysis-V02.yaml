@@ -67,6 +67,7 @@ template: |
   - Use your expertise to generate the most efficient and effective answer for the given task.
   - Be sure to use the `df` variable to access the dataframe.
   - Use function call(`python_repl_tool`) to return the result.
+  - Use only English for x, y axis labels, title, legend, etc.
 
   ###
 

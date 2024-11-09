@@ -1,5 +1,5 @@
 from langchain.tools import tool
-from typing import List, Dict, Annotated, Optional
+from typing import Annotated, Optional
 from langchain_experimental.tools.python.tool import PythonAstREPLTool
 import pandas as pd
 import seaborn as sns
@@ -9,10 +9,6 @@ from langchain_openai import ChatOpenAI
 from langchain.agents import create_tool_calling_agent, AgentExecutor
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
-import pandas as pd
-
-from langchain_core.prompts import PromptTemplate
-from langchain_core.output_parsers import StrOutputParser
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
@@ -44,16 +40,16 @@ class DataAnalysisAgent:
     def create_python_repl_tool(self):
         @tool
         def python_repl_tool(
-            code: Annotated[str, "실행할 파이썬 코드 (차트 생성용)"],
+            code: Annotated[str, "Any python code(pandas, matplotlib, seaborn) to run"],
         ):
-            """파이썬, 판다스 쿼리, matplotlib, seaborn 코드를 실행하는 데 사용합니다."""
+            """Use this tool to run python, pandas query, matplotlib, and seaborn code."""
             try:
                 python_tool = PythonAstREPLTool(
                     locals={"df": self.df, "sns": sns, "plt": plt}
                 )
                 return python_tool.invoke(code)
             except Exception as e:
-                return f"실행 실패. 오류: {repr(e)}"
+                return f"Execution failed. Error: {repr(e)}"
 
         return python_repl_tool
 
