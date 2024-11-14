@@ -13,9 +13,10 @@
 *.index
 *.sqlite3
 *.bin
+*.wav
+
 .idea/
 .vscode/
-
 
 # 폴더
 */cache/*
@@ -24,6 +25,8 @@
 */convert/*
 */convert2/*
 */unuse/*
+*/corpus/*
+*/mlruns/*
 working/
 
 ### JupyterNotebooks ###
