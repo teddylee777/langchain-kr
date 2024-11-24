@@ -90,6 +90,8 @@ rouge-score = "^0.1.2"
 langchain-ollama = "^0.2.0"
 mypy = "^1.11.2"
 pinecone = "^5.3.1"
+wikipedia = "^1.4.0"
+scikit-learn = "^1.5.2"
 
 [build-system]
 requires = ["poetry-core"]
