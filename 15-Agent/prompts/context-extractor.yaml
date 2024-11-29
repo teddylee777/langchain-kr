@@ -1,0 +1,21 @@
+_type: "prompt"
+template: |
+  You will be given a list of context. Your task is to extract the most relevant context for the user's query.
+
+  Here is the user's query:
+  {question}
+
+  Here is the context:
+  {contexts}
+
+  Your task is to extract the most relevant context for the user's query.
+  Each context is delimited by `[index]`.
+
+  Remember:
+  - Your response should be only the relevant context for the user's query, nothing else.
+  - Only return the index of the relevant context.
+
+  Your output should be indexes(just numbers) of the relevant context, separated by comma.
+  index1,index2,index3,...
+
+input_variables: ["question", "contexts"]
