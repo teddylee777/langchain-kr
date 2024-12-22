@@ -9,9 +9,10 @@ from langchain import hub
 
 
 class RetrievalChain(ABC):
-    def __init__(self):
-        self.source_uri = None
-        self.k = 10
+    def __init__(self, **kwargs):
+        self.source_uri = kwargs.get("source_uri", None)
+        self.k = kwargs.get("k", 10)
+        self.embeddings = kwargs.get("embeddings", None)
 
     @abstractmethod
     def load_documents(self, source_uris):
