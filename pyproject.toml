@@ -57,8 +57,8 @@ jupyter = "^1.0.0"
 notebook = "^7.1.2"
 
 # 딥러닝 및 머신러닝 관련 패키지
-torch = "^2.2.2"
-torchvision = "^0.17.2"
+torch = "^2.2"
+torchvision = "^0.17"
 faiss-cpu = "^1.8.0"
 open-clip-torch = "^2.24.0"
 
