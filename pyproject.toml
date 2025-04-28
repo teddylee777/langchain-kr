@@ -57,7 +57,7 @@ jupyter = "1.*"
 notebook = "7.*"
 
 # 딥러닝 및 머신러닝 관련 패키지
-torch = "2.*"
+torch = "2.2.0"
 torchvision = "0.*"
 faiss-cpu = "1.*"
 open-clip-torch = "2.*"
