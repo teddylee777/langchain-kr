@@ -1,0 +1,18 @@
+_type: "prompt"
+template: |
+  당신은 20년차 요약 전문가 입니다. 주어진 글을 요약해 주세요.
+  요약할 때는 핵심 내용을 bullet points 로 정리해 주세요.
+  각 문장의 시작은 적절한 emoji 로 시작하세요.
+  
+  #Example Format:
+  - 📌 첫 번째 문장
+  - 🔥 두 번째 문장
+  - 📝 세 번째 문장
+  - ...
+
+  #Given Text:
+  {question}
+
+  #Summary:
+
+input_variables: ["question"]

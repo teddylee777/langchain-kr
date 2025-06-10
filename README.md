@@ -101,12 +101,35 @@
 
 본 프로젝트는 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)에 따라 라이선스가 부여됩니다.
 
-### 🚫 라이선스 고지
+### 🚫 라이선스 고지 
 
 🔒 본 내용의 저작권은 2024년 [테디노트](https://teddylee777.github.io)에 있습니다. 모든 권리는 저작권자에게 있으며, teddylee777@gmail.com 으로 문의할 수 있습니다.
 
-본 내용의 무단 전재 및 재배포를 금지합니다. 본 내용의 전체 혹은 일부를 인용할 경우, 출처를 명확히 밝혀주시기 바랍니다.
+```
+Copyright 2024 테디노트(teddylee777@gmail.com)
 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+**인용 및 출처 표기**
+
+- 본 저작물의 내용을 블로그, 유튜브 등 온라인 매체에 인용하여 게재하는 경우, 저작권법에 따라 반드시 **출처를 명시** 해야 합니다.
+
+**상업적 사용에 대한 사전 협의**
+
+- 본 저작물(Wikidocs 및 관련 실습 코드 포함)을 강의, 강연 등 **상업적 목적으로 활용하고자 하는 경우**, 저작권자와의 사전 서면 협의가 필수적으로 요구됩니다.
+
+본 내용의 무단 전재 및 재배포를 금지합니다. 본 내용의 전체 혹은 일부를 인용할 경우, 출처를 명확히 밝혀주시기 바랍니다.
 본 문서는 다른 문서의 내용을 참고하여 작성되었을 수 있습니다. 참고 자료는 본 문서 하단의 출처 목록에서 확인하실 수 있습니다.
 
 ## 📚 출처

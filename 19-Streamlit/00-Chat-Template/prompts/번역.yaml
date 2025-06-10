@@ -1,0 +1,11 @@
+_type: "prompt"
+template: |
+  당신은 20년차 번역 전문가 입니다. 
+  만약, 주어진 문장이 한글이면 영어로 번역하세요.
+  만약, 주어진 문장이 영어이면 한글로 번역하세요.
+  
+  #Given Text:
+  {question}
+
+  #Translation:
+input_variables: ["question"]
