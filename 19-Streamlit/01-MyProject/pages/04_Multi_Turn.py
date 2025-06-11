@@ -49,7 +49,7 @@ with st.sidebar:
     clear_btn = st.button("대화 초기화")
 
     # 모델 선택 메뉴
-    selected_model = st.selectbox("LLM 선택", ["gpt-4o", "gpt-4o-mini"], index=0)
+    selected_model = st.selectbox("LLM 선택", ["gpt-4.1-mini", "gpt-4.1-nano"], index=0)
 
     # 세션 ID 를 지정하는 메뉴
     session_id = st.text_input("세션 ID를 입력하세요.", "abc123")
@@ -75,7 +75,7 @@ def get_session_history(session_ids):
 
 
 # 체인 생성
-def create_chain(model_name="gpt-4o"):
+def create_chain(model_name="gpt-4.1-mini"):
 
     # 프롬프트 정의
     prompt = ChatPromptTemplate.from_messages(
@@ -91,7 +91,7 @@ def create_chain(model_name="gpt-4o"):
     )
 
     # llm 생성
-    llm = ChatOpenAI(model_name="gpt-4o")
+    llm = ChatOpenAI(model_name="gpt-4.1-mini")
 
     # 일반 Chain 생성
     chain = prompt | llm | StrOutputParser()

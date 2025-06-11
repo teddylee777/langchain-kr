@@ -112,7 +112,7 @@ with st.sidebar:
         "CSV 파일을 업로드 해주세요.", type=["csv"]
     )  # CSV 파일 업로드 기능
     selected_model = st.selectbox(
-        "OpenAI 모델을 선택해주세요.", ["gpt-4o", "gpt-4o-mini"], index=0
+        "OpenAI 모델을 선택해주세요.", ["gpt-4.1-mini", "gpt-4.1-nano"], index=0
     )  # OpenAI 모델 선택 옵션
 
     user_column_guideline = st.text_area("컬럼 가이드라인")
@@ -195,7 +195,7 @@ def result_callback(result: str) -> None:
 # 에이전트 생성 함수
 def create_agent(
     dataframe,
-    selected_model="gpt-4o",
+    selected_model="gpt-4.1-mini",
     prefix_prompt=None,
     postfix_prompt=None,
     user_column_guideline=None,
@@ -205,7 +205,7 @@ def create_agent(
 
     Args:
         dataframe (pd.DataFrame): 분석할 데이터프레임
-        selected_model (str, optional): 사용할 OpenAI 모델. 기본값은 "gpt-4o"
+        selected_model (str, optional): 사용할 OpenAI 모델. 기본값은 "gpt-4.1-mini"
 
     Returns:
         Agent: 생성된 데이터프레임 에이전트

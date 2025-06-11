@@ -79,7 +79,7 @@ def create_email_parsing_chain():
     prompt = prompt.partial(format=output_parser.get_format_instructions())
 
     # 체인 생성
-    chain = prompt | ChatOpenAI(model="gpt-4-turbo") | output_parser
+    chain = prompt | ChatOpenAI(model="gpt-4.1") | output_parser
 
     return chain
 
@@ -91,7 +91,7 @@ def create_report_chain():
     output_parser = StrOutputParser()
 
     # 체인 생성
-    chain = prompt | ChatOpenAI(model="gpt-4-turbo") | output_parser
+    chain = prompt | ChatOpenAI(model="gpt-4.1") | output_parser
 
     return chain
 

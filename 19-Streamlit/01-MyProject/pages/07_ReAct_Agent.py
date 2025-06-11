@@ -33,7 +33,7 @@ with st.sidebar:
     clear_btn = st.button("대화 초기화")
 
     # 모델 선택 메뉴
-    selected_model = st.selectbox("LLM 선택", ["gpt-4o", "gpt-4o-mini"], index=0)
+    selected_model = st.selectbox("LLM 선택", ["gpt-4.1-mini", "gpt-4.1-nano"], index=0)
 
     # 세션 ID 를 지정하는 메뉴
     # session_id = st.text_input("세션 ID를 입력하세요.", "abc123")

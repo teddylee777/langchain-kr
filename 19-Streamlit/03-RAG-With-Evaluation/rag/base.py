@@ -43,7 +43,7 @@ class RetrievalChain(ABC):
         return dense_retriever
 
     def create_model(self):
-        return ChatOpenAI(model_name="gpt-4o", temperature=0)
+        return ChatOpenAI(model_name="gpt-4.1-mini", temperature=0)
 
     def create_prompt(self):
         return hub.pull("teddynote/rag-prompt")

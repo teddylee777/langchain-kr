@@ -45,7 +45,7 @@ with st.sidebar:
     uploaded_file = st.file_uploader("이미지 업로드", type=["jpg", "jpeg", "png"])
 
     # 모델 선택 메뉴
-    selected_model = st.selectbox("LLM 선택", ["gpt-4o", "gpt-4o-mini"], index=0)
+    selected_model = st.selectbox("LLM 선택", ["gpt-4.1-mini", "gpt-4.1-nano"], index=0)
 
     # 시스템 프롬프트 추가
     system_prompt = st.text_area(
@@ -80,7 +80,9 @@ def process_imagefile(file):
 
 
 # 체인 생성
-def generate_answer(image_filepath, system_prompt, user_prompt, model_name="gpt-4o"):
+def generate_answer(
+    image_filepath, system_prompt, user_prompt, model_name="gpt-4.1-mini"
+):
     # 객체 생성
     llm = ChatOpenAI(
         temperature=0,
