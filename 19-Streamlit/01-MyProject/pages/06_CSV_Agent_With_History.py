@@ -112,7 +112,9 @@ with st.sidebar:
         "CSV 파일을 업로드 해주세요.", type=["csv"]
     )  # CSV 파일 업로드 기능
     selected_model = st.selectbox(
-        "OpenAI 모델을 선택해주세요.", ["gpt-4.1-mini", "gpt-4.1-nano"], index=0
+        "OpenAI 모델을 선택해주세요.",
+        ["gpt-4.1", "gpt-4.1-mini", "gpt-4o", "gpt-4o-mini"],
+        index=0,
     )  # OpenAI 모델 선택 옵션
 
     user_column_guideline = st.text_area("컬럼 가이드라인")
@@ -243,13 +245,22 @@ def ask(query):
         stream_parser = AgentStreamParser(parser_callback)
 
         with st.chat_message("assistant"):
+            has_dataframe = False
             for step in response:
                 stream_parser.process_agent_steps(step)
                 if "output" in step:
                     ai_answer += step["output"]
-            st.write(ai_answer)
-
-        add_message(MessageRole.ASSISTANT, [MessageType.TEXT, ai_answer])
+                # DataFrame이 출력되었는지 확인
+                if st.session_state["messages"] and st.session_state["messages"][-1][0] == MessageRole.ASSISTANT:
+                    for content in st.session_state["messages"][-1][1]:
+                        if isinstance(content, list) and content[0] == MessageType.DATAFRAME:
+                            has_dataframe = True
+                            break
+            
+            # DataFrame이 출력되지 않은 경우에만 텍스트 답변 출력
+            if not has_dataframe and ai_answer:
+                st.write(ai_answer)
+                add_message(MessageRole.ASSISTANT, [MessageType.TEXT, ai_answer])
 
 
 # 메인 로직
